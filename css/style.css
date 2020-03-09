@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+.timercard {
+  margin: 50px;
+  padding-left: 30px;
+  background-color: red;
+  width: 170px;
+  height: 40px;
+}
+
+#timer {
+  color: black;
+  padding-top: 7px;
+  padding-left: 5px;
+  font-style: bold;
+  display: inline-block;
+}
+
+body {
+  background-color: gainsboro;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+  font-family: "Noto Sans KR", sans-serif;
+  background-position: top center !important;
+  background-size: cover;
+}
+
+.container-fluid {
+  width: 780px;
+  padding-top: 90px;
+  border: none;
+  display: flex;
+}
+
+#question {
+  font-size: 21px;
+}
+
+.card-body {
+  width: 750px;
+  height: 300px;
+}
+
+.card-header {
+  background-color: #4267b2;
+  color: white;
+}
+
+#message {
+  padding-top: 12px;
+  font-weight: bold;
+  color: #29472f;
+}
+
+#start-btn {
+  margin-left: 265px;
+  margin-top: 60px;
+  background-color: #f9f900;
+  width: 180px;
+  color: black;
+}
+
+#submit-btn {
+  background-color: #f9f900;
+  width: 180px;
+  color: black;
+  margin-top: 40px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#submit-btn :focus,
+#submit-btn :active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#submit-btn :hover {
+  background-color: #29472f;
+  color: white;
+}
+
+#retake-btn {
+  background-color: #f9f900;
+  width: 180px;
+  color: black;
+  margin-top: 40px;
+  margin-left: 265px;
+  margin-top: 60px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#highscores-btn {
+  background-color: #29472f;
+  width: 180px;
+  color: white;
+  margin-left: 5px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+#highscores-btn :focus,
+#highscores-btn :active {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #f9f900;
+  color: black;
+  text-decoration: none;
+}
+
+.button-group {
+  padding-top: 20px;
+}
+
+#start-btn:focus,
+#start-btn :active {
+  outline: none;
+  box-shadow: none;
+}
+
+#start-btn:hover {
+  background-color: #4267b2;
+  color: white;
+}
+
+.btn {
+  background-color: #e8e8e8;
+  border-color: white;
+  color: black; /* White text */
+  padding: 10px; /* Some padding */
+  margin: 0 auto;
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%;
+  display: block; /* Make the buttons appear below each other */
+}
+
+#new-board-btn {
+  white-space: normal;
+}
+
+.input-text {
+  margin-top: 20px;
+  text-align: center;
+  color: #5a5a5a;
+  width: 375px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: #f9f900;
+}

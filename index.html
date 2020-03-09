@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/f21a002de0.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Quiz Challenge</title>
+</head>
+
+<body>
+  <!-- Card for Timer -->
+  <div class="timercard">
+  <i class="fas fa-clock"></i>
+    <div id="timer">0</div><span> Seconds</span>
+  </div>
+  <!-- Card for Quiz -->
+  <div class="container-fluid">
+    <div class="card text-center border-0">
+      <div class="card-header">
+        <em>Knowledge about Canada</em>
+      </div>
+      <div class="card-body">
+        <div id="question">You think you know a lot about Canada?<br>Let's find out!</br></div>
+        <!-- Buttons -->
+        <div id="question-container" style="display:none;">
+          <div id="answer-buttons" class="">
+            <button class="btn" id="answerOne"></button>
+            <button class="btn" id="answerTwo"></button>
+            <button class="btn" id="answerThree"></button>
+            <button class="btn" id="answerFour"></button>
+          </div>
+          <div id="message"></div>
+        </div>
+        <!-- Score indicator -->
+        <div id="score-container" style="display:none;">
+          <p>Your final score is: <span id="finalscore"></span></p>
+          <!-- Initials and score input -->
+          <div id="highscores-container">
+            <input type="text" class="input-text" id="input-text" name="Name" onfocus="this.value=''"
+              placeholder="Enter your name here"><br>
+            <div class="scorebuttons-container">
+              <input type="submit" value="Submit your Score" id="submit-btn" class="btn btn-primary border-0"></button>
+              <input type="highscores-btn" value="View High Scores" id="highscores-btn" href="#"
+                class="btn btn-primary border-0"></button>
+            </div>
+          </div>
+        </div>
+        <!-- High Scores Section -->
+        <a href="index.html"><button id="retake-btn" input type="retake-btn" value="Retake Quiz" id="retake-btn"
+            class="btn btn-primary border-0" style="display:none;">Retake Quiz!</button></a>
+        <button id="start-btn" class="btn btn-primary border-0">Start Quiz!</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+  <script src="./js/questions.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
